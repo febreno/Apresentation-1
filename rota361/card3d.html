@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/rota361.png" rel="icon" type="image/x-icon" />
+    <title>Rota 361</title>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"));
+    </script>
+</head>
+<style>
+    *{
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+    body{
+        background-image: url("img/coworking-spaces.png");
+        opacity: 0.5;
+    }
+        .bnt{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        .bnt button{
+            cursor: pointer;
+            margin-right: 10px;
+            border: none;
+            font-size: 16px;
+            height: 30px;
+            width: 100px;
+            background-color: white;
+            border-radius: 5px;
+            color: #3f98eb;
+        }
+        .bnt button:hover{
+            border: 2px solid #3f98eb;
+            background-color: #3f98eb;
+            color: rgb(255, 255, 255);
+        }
+
+
+        /* @media only screen and (max-width: 1115px) {
+
+        } */
+        .flex{
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            padding: 10px;
+            /* filter: blur(3px); */
+            margin-top: 50px;
+            width: 420px;
+            height: 250px;
+            border-radius: 15px;
+            background-color: #222;
+            border: 2px solid #3f98eb;
+        }
+        .box:hover{
+            filter: none;
+        }
+        .num {
+            display: flex;
+            align-items: flex-end;
+            margin-top: 11px;
+        }
+        .num p{
+            color: rgb(145 138 116);
+            filter: blur(1.7px);
+            cursor: pointer;
+        }
+        .num p:hover{
+            filter: none;
+        }
+        .bar{
+            /* margin-top: 100px; */
+            background: #918a74;
+            width: 395px;
+            height: 45px;
+        }
+        .top{
+            display: flex;
+            justify-content: space-around;
+        }
+        .top img{
+            width: 100px;
+            border-radius: 100%;
+            margin: 0 0 20px 37px;
+        }
+        h1{
+            color: #3f98eb;
+        }
+
+
+</style>
+<body>
+    <div class="bnt">
+        <button onclick="location.href='index.html'">Solutions</button>
+        <button onclick="location.href='card3d.html'">Card</button>
+        <button onclick="location.href='Bd.html'">Bd</button>
+        <button onclick="location.href='APIs.html'">API</button>
+    </div>
+
+    <!-- your markup element -->
+<div>
+    <div class="flex" data-tilt>
+        <div class="box">
+            <div class="top">
+                <h1>Rota361</h1>
+                <img src="./img/logoControl.png" alt="">
+            </div>
+            <div class="num">
+                <p>Mostrando o caminho</p>
+            </div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</div>
+
+<!-- at the end of the body -->
+<script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+</body>
+</html>

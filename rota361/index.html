@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/rota361.png" rel="icon" type="image/x-icon" />
+    <title>Rota 361</title>
+    <script>
+        $('.js-tilt').tilt({
+            glare: true,
+            maxGlare: .5
+        })
+    </script>
+</head>
+<style>
+    *{
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+    body{
+        background-image: url("img/coworking-spaces.png");
+        opacity: 0.5;
+    }
+    .wrapper{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        /* width: 70%; */
+        /* justify-content: space-between; */
+    }
+    .card{
+        margin: 20px;
+        cursor: pointer;
+        width: 280px;
+        height: 360px;
+        padding: 2rem 1rem;
+        background: #fff;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+        border: 3px solid #3f98eb;
+        }
+        .card:hover{
+            transform: translateY(20px);
+        }
+        .card:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgb(197, 179, 193), #3f98eb);
+            z-index: 2;
+            transition: 0.5s all;
+            opacity: 0;
+        }
+        .card:hover:before{
+            opacity: 0.9;
+        }
+        .card img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .card a{
+            opacity: 0;
+            z-index: 9999;
+        }
+        .card .info{
+            position: relative;
+            z-index: 3;
+            color: #fff;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.5s all;
+        }
+        .card:hover .info{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        .crad .info h1{
+            margin: 0;
+        }
+        .card .info p{
+            letter-spacing: 1px;
+            font-size: 15px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+        }
+        .card .info .btn{
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: #fff;
+            color: #000;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+        }
+        .card .info .btn:hover{
+            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        }
+        .bnt{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        .bnt button{
+            margin: 10px;
+            border: none;
+            font-size: 16px;
+            height: 30px;
+            width: 100px;
+            background-color: white;
+            border-radius: 5px;
+            color: #3f98eb;
+            cursor: pointer;
+        }
+        .bnt button:hover{
+            border: 2px solid #3f98eb;
+            background-color: #3f98eb;
+            color: rgb(255, 255, 255);
+        }
+
+        @media only screen and (max-width: 1115px) {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: none;
+        }
+        /* body{
+            display: flex;
+            justify-content: center;
+        } */
+}
+
+
+</style>
+<body>
+    <div class="bnt">
+        <button onclick="location.href='index.html'">Solutions</button>
+        <button onclick="location.href='card3d.html'">Card</button>
+        <button onclick="location.href='Bd.html'">Bd</button>
+        <button onclick="location.href='APIs.html'">API</button>
+    </div>
+    <div class="wrapper">
+        <!-- 280px-360px -->
+        <div class="card">
+            <img src="./img/rota.png" alt="">
+            <div class="info">
+                <h1>Rota</h1>
+                <p>Tranforme rotas complexas em organizadas e praticas</p>
+            </div>
+            <a href="splash.html" class="btn">Read more</a>
+        </div>
+
+        <div class="card">
+            <img src="./img/caminhao1.png" alt="">
+            <div class="info">
+                <h1>Transporte</h1>
+                <p>Realize organizações de trajeto para transportadores</p>
+            </div>
+            <a href="splash.html" class="btn">Read more</a>
+        </div>
+
+        <div class="card">
+            <img src="./img/destino.png" alt="">
+            <div class="info">
+                <h1>Destino</h1>
+                <p>Monitore o produto até o final</p>
+            </div>
+            <a href="splash.html" class="btn">Read more</a>
+        </div>
+    </div>
+    
+</body>
+</html>
